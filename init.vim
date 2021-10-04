@@ -18,3 +18,20 @@ set undofile                                       " enable persistent undo
 set undodir=C:\Users\tngam\AppData\Local\nvim\undo " set undo directory location
 set undolevels=1000                                " maximum number of changes that can be undone
 set undoreload=10000                               " maximum number lines to save for undo on a buffer reload
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('C:\Users\tngam\AppData\Local\nvim-data\site\autoload')
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+
+Plug 'arcticicestudio/nord-vim'
+
+" Initialize plugin system
+call plug#end()
+
+colorscheme nord
