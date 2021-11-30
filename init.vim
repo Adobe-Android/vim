@@ -28,7 +28,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 augroup ProjectDrawer
   autocmd!
-  autocmd VimEnter * :Vexplore C:\Users\tngam\source\repos
+  autocmd VimEnter * :Vexplore .
 augroup END
 
 " set
